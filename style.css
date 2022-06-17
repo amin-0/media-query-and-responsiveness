@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsl(246, 25%, 77%);
+    
+}
+main{
+    display: flex;
+    
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    min-height: 0;
+}
+
+p{
+    color: white;
+}
+#text-content{
+    width: 50%;
+    margin: 20px;
+    margin-left: 50px;
+    color: white;
+}
+#text-content h2{
+    font-weight: 700;
+}
+#text-content p{
+    font-weight: 400;
+}
+#form-content{
+    width: 50%;
+    margin: 20px;
+}
+#form-content h4{
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#form-content h4 strong{
+    color: white;
+}
+#form-container{
+    background-color: white;
+}
+#form-container p{
+    color: black;
+    font-size: 0.5em;
+}
+#form-container span{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.8em;
+}
+form{
+    padding: 20px;
+}
+input{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+}
+input[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+}
+input::after{
+    content: 'validation message';
+    position: absolute;
+    bottom: -8px;
+    color: red;
+
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        height: auto;
+        flex-direction: column;
+        
+        padding: 10px;
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    #text-content {
+        width: 90%;
+    }
+    #form-content {
+        width: 90%;
+    }
+}
